@@ -1,21 +1,23 @@
 {
-	"name": "vite-shopify-preset",
-	"version": "1.0.0",
-	"description": "A Vite.js preset for compiling assets for (standard) Shopify themes.",
-	"main": "src/index.js",
-	"scripts": {
-		"build": "vite build",
-		"dev": "vite"
-	},
-	"keywords": [
-		"vite",
-		"shopify",
-		"preset",
-		"plugin"
-	],
-	"author": "Nikita Zanella",
-	"license": "MIT",
-	"dependencies": {
-		"vite": "^4.5.3"
-	}
+  "name": "@nikitazanella/vite-shopify-preset",
+  "version": "1.0.4",
+  "description": "A Vite.js preset for compiling assets for (standard) Shopify themes.",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite"
+  },
+  "keywords": [
+    "vite",
+    "shopify",
+    "preset",
+    "plugin"
+  ],
+  "author": "Nikita Zanella",
+  "license": "MIT",
+  "dependencies": {
+    "vite": "^4.5.3"
+  },
+  "devDependencies": {}
 }
