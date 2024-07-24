@@ -2,6 +2,8 @@
 
 A simple Vite.js preset to compile assets for standard Shopify themes.
 
+![Tux, the Linux mascot](/vite-shopify-preset.png)
+
 ## Usage
 
 ```js
