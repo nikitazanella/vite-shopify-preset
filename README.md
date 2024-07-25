@@ -6,13 +6,28 @@ A simple Vite.js preset to compile assets for standard Shopify themes.
 
 ## Usage
 
+Create a /src folder in the root of your Shopify theme.
+Create a /js folder in the /src folder and add your js files (es6)
+Create a /scss folder in the /scss folder and add your scss files.
+
 ```js
 // vite.config.js
-import viteShopifyPreset from "vite-shopify-preset";
+import viteShopifyPreset from "@nikitazanella/vite-shopify-preset";
 
 export default {
   plugins: [viteShopifyPreset()],
 };
+```
+npm scripts
+
+```shell
+...
+	"scripts": {
+		"shopify:theme": "shopify theme dev --store storename.myshopify.com",
+		"watch": "vite build --watch",
+		"build": "vite build"
+	},
+...
 ```
 
 Currently support only vanilla js and scss. Additional/optional config coming soon.
