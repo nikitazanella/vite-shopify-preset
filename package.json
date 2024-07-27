@@ -1,6 +1,6 @@
 {
   "name": "@nikitazanella/vite-shopify-preset",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A Vite.js preset for compiling assets for (standard) Shopify themes.",
   "main": "src/index.js",
   "type": "module",
