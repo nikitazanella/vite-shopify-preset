@@ -4,15 +4,24 @@ A simple Vite.js preset to compile assets for standard Shopify themes.
 
 ![Tux, the Linux mascot](https://raw.githubusercontent.com/nikitazanella/vite-shopify-preset/main/vite-shopify-preset.png)
 
+## Installation
+
+**via npm**
+
+```shell
+npm install @ --save
+```
+
 ## Usage
 
 ```js
 // vite.config.js
+import { defineConfig } from "vite";
 import viteShopifyPreset from "vite-shopify-preset";
 
-export default {
+export default defineConfig({
   plugins: [viteShopifyPreset()],
-};
+});
 ```
 
 Currently support only vanilla js and scss. Additional/optional config coming soon.
