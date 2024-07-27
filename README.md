@@ -14,14 +14,31 @@ npm install @ --save
 
 ## Usage
 
+Create a /src folder in the root of your Shopify theme.
+Create a /js folder in the /src folder and add your js files (es6)
+Create a /scss folder in the /scss folder and add your scss files.
+
 ```js
 // vite.config.js
+import viteShopifyPreset from "@nikitazanella/vite-shopify-preset";
 import { defineConfig } from "vite";
-import viteShopifyPreset from "vite-shopify-preset";
 
 export default defineConfig({
   plugins: [viteShopifyPreset()],
 });
+};
+```
+
+npm scripts
+
+```shell
+...
+	"scripts": {
+		"shopify:theme": "shopify theme dev --store storename.myshopify.com",
+		"watch": "vite build --watch",
+		"build": "vite build"
+	},
+...
 ```
 
 Currently support only vanilla js and scss. Additional/optional config coming soon.
