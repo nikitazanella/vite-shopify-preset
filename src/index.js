@@ -15,12 +15,7 @@ const getFiles = (dir, exts) =>
 export default function viteShopifyPreset(config) {
   const javascriptPath = config?.javascriptPath || "src/js";
   const stylesPath = config?.stylesPath || "src/styles";
-  const styleExtensions = config?.styleExtensions || [
-    ".scss",
-    ".css",
-    ".less",
-    ".sass",
-  ];
+  const styleExtensions = [".scss", ".css", ".less", ".sass"];
   const useTailwind = config?.useTailwind || false;
 
   return {

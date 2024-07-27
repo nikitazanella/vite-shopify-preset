@@ -14,9 +14,27 @@ npm install @ --save
 
 ## Usage
 
-Create a /src folder in the root of your Shopify theme.
-Create a /js folder in the /src folder and add your js files (es6)
-Create a /scss folder in the /scss folder and add your scss files.
+By default, VSP (vite Shopify preset), search for files from the /src folder.
+In this folder you have to create a folder for your styles and a folder for your js.
+
+Example:
+
+- ROOT
+  |- ASSETS
+  |- SECTIONS
+  |- SNIPPETS
+  | ...
+  | SRC
+  | |- JS
+  | | |- index.js
+  | | |- [name].js
+  | | |- other
+  | |- SCSS
+  | | |- theme.scss
+  | | |- reset.scss
+  | | |- other
+
+You can use any kind of pre-processor (scss,sass,less and of course css).
 
 ```js
 // vite.config.js
@@ -24,8 +42,15 @@ import viteShopifyPreset from "@nikitazanella/vite-shopify-preset";
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  plugins: [viteShopifyPreset()],
+  plugins: [viteShopifyPreset(config)],
 });
+
+// Optional configuration
+
+const config = {
+  stylesPath: "/path/to/styles", // optional
+  javascriptPath: "/path/to/javascript", // optional
+  useTailwind: false, // optional
 };
 ```
 
@@ -40,8 +65,6 @@ npm scripts
 	},
 ...
 ```
-
-Currently support only vanilla js and scss. Additional/optional config coming soon.
 
 ## Features
 
